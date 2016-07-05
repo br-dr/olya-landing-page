@@ -109,7 +109,7 @@
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 							<div class="thumbnail">
 								<img class="img-responsive" src="images/2.jpg" alt="">
-								<p class="caption">Картина1</p>
+								<p class="caption">Картина2</p>
 
 							</div>
 						</div>
@@ -117,13 +117,13 @@
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 							<div class="thumbnail">
 								<img class="img-responsive" src="images/3.jpg" alt="">
-								<p class="caption">Картина1</p>
+								<p class="caption">Картина3</p>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 							<div class="thumbnail">
 								<img class="img-responsive" src="images/1.jpg" alt="">
-								<p class="caption">Картина1</p>
+								<p class="caption">Картина4</p>
 							</div>
 						</div>	
 						
@@ -134,14 +134,14 @@
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 								<div class="thumbnail">
 									<img class="img-responsive" src="images/1.jpg" alt="">
-									<p class="caption">Картина1</p>
+									<p class="caption">Картина5</p>
 								</div>
 							</div>
 
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 								<div class="thumbnail">
 									<img class="img-responsive" src="images/2.jpg" alt="">
-									<p class="caption">Картина1</p>
+									<p class="caption">Картина6</p>
 
 								</div>
 							</div>
@@ -149,13 +149,13 @@
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 								<div class="thumbnail">
 									<img class="img-responsive" src="images/3.jpg" alt="">
-									<p class="caption">Картина1</p>
+									<p class="caption">Картина7</p>
 								</div>
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 								<div class="thumbnail">
 									<img class="img-responsive" src="images/1.jpg" alt="">
-									<p class="caption">Картина1</p>
+									<p class="caption">Картина8</p>
 								</div>
 							</div>	
 				
@@ -166,14 +166,14 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<div class="thumbnail">
 							<img class="img-responsive" src="images/1.jpg" alt="">
-							<p class="caption">Картина1</p>
+							<p class="caption">Картина9</p>
 						</div>
 					</div>
 
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<div class="thumbnail">
 							<img class="img-responsive" src="images/2.jpg" alt="">
-							<p class="caption">Картина1</p>
+							<p class="caption">Картина10</p>
 
 						</div>
 					</div>
@@ -181,44 +181,67 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<div class="thumbnail">
 							<img class="img-responsive" src="images/3.jpg" alt="">
-							<p class="caption">Картина1</p>
+							<p class="caption">Картина11</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<div class="thumbnail">
 							<img class="img-responsive" src="images/1.jpg" alt="">
-							<p class="caption">Картина1</p>
+							<p class="caption">Картина12</p>
 						</div>
 					</div>	
 				
 			</div>
 
-
-			
-		
-
-		</div>
-			
+		</div>			
 		</section>
-	
-
 		
 
-		<footer>
-			
-
+		<footer>		
 			<div class="content">
 				<nav>
 					<a href="">Обо мне</a>
 					<a href="">Мои работы</a>
 					<a href="">Контакты</a>
 				</nav>
-			</div>
-
-				
-			
-			
+			</div>			
 		</footer>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">X</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Get all images and insert the clicked image inside the modal
+// Get the content of the image description and insert it inside the modal image caption
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+   images[i].onclick = function(){
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+       captionText.innerHTML = this.nextElementSibling.innerHTML;
+   }
+}
+</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
