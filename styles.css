@@ -3,14 +3,15 @@ header {
 	height: 400px;
 	background: url(images/header_background.jpg) center center;
 	background-size: cover;	
+    margin: 0;
 }
 
-header nav {
+/*header nav {
 	float: right;
 	margin: 25px 25px 0 0;
-}
+}*/
 
-header nav a {
+nav a {
 	display: inline-block;
 	margin-left: 20px;
 	font-size: 14px;
@@ -21,7 +22,39 @@ header nav a {
 
 }
 
-header a {
+/*nav button {
+    color: black;
+    z-index: 1;
+}*/
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-toggle {
+    background-color: pink;
+    
+}
+
+.navbar-custom {
+    background-color:#F5DEB3;
+    /*min-height: 30px !important;
+    height: 30px !important;*/
+    color: #ffffff;
+    border: none;
+    /*margin: 0 0 0 0 !important;*/
+    /*padding: 0px;*/
+          
+    
+ }
+ 
+ .icon-bar {
+     color: black
+ }
+
+
+nav a {
 	font-family: 'Lobster', Arial, serif; 
 
 }
@@ -38,7 +71,7 @@ header h1 {
 	color: rgba(255,255,255,1);
 	text-transform: uppercase;
 	clear: both;
-	padding-top: 30px;
+	padding-top: 100px;
 	/*font-family: 'Lobster Two',	Arial, serif;*/
 	font-family: 'Lobster', Arial, serif; 
 	letter-spacing: 8px;
