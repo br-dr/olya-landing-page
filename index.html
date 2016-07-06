@@ -8,8 +8,6 @@
 		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
-		
-
 
 	</head>
 	<body>
@@ -227,6 +225,13 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
+// When the user press ESC, close the modal
+document.onkeydown = function(evtEsc) {    
+    if (evtEsc.keyCode == 27) {    
+        document.getElementById("myModal").style.display = "none";
+    }
+};
+
 // Get all images and insert the clicked image inside the modal
 // Get the content of the image description and insert it inside the modal image caption
 var images = document.getElementsByTagName('img');
@@ -246,6 +251,6 @@ for (i = 0; i < images.length; i++) {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-
+	
 	</body>
 </html>
