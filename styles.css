@@ -29,6 +29,14 @@ header {
     margin: 0;
 }
 
+.navbar {
+    margin-bottom: 0px;
+}
+
+header h1 {
+    margin:0px;
+}
+
 /*header nav {
 	float: right;
 	margin: 25px 25px 0 0;
@@ -36,7 +44,7 @@ header {
 
 nav a {
 	display: inline-block;
-	margin-left: 20px;
+	/*margin-left: 20px;*/
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
