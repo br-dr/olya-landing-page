@@ -6,27 +6,42 @@
 		<meta name="viewport" content="width = device-width, initial-scale = 1">
 		<!-- <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,400italic' rel='stylesheet' type='text/css'> -->
 		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+
+
 
 	</head>
 	<body>
-		
-		<header>
-			<div class="container">
-				<div class="row">
-					
-					
-					<div class="col-lg-4 col-lg-offset-8 col-md-6 col-md-offset-6">
-						<nav>
-							<a href="">Обо мне</a>
-							<a href="">Мои работы</a>
-							<a href="">Контакты</a>
-						</nav>
-					</div>			
+		<div>
+		<a href="#"><img id="logo" src="images/logo.png" alt="logo"></a>
+		</div>
+		<nav class="navbar navbar-custom">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Галерея</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+									
+					<li><a href="#">Мои работы</a></li>
+					<li><a href="#">Обо мне</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				
 				</div>
 			</div>
-			
+		</nav>
+		<header>			
 			<h1><span>Галерея Ольги Липской</span></h1>
 		</header>
 
@@ -211,6 +226,7 @@
   <span class="close">X</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
+  <!-- <button type="button" onclick="nextPic()">Next Picture</button> -->
 </div>
 
 <script>
@@ -246,6 +262,13 @@ for (i = 0; i < images.length; i++) {
        captionText.innerHTML = this.nextElementSibling.innerHTML;
    }
 }
+
+/*function nextPic() {
+	alert(modalImg[i]);
+	modalImg.src = "images/3.jpg";
+    captionText.innerHTML = "Some text";
+};*/
+
 </script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
