@@ -151,6 +151,32 @@ header h1 span {
 	background-color: #FFEBCD
 }
 
+#about h3 {
+	text-align: center;
+	color: #B8860B;
+
+}
+
+#about p {
+	padding: 15px 15px 0;
+}
+
+#about {
+	background-color: #FFE4B5;
+}
+
+.face-img {
+	
+	background: url(images/face.jpg) center ;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	align: center;
+	margin-bottom: 20px;
+	margin-top: 20px
+}
+
 
 footer {
 	height: 60px;
