@@ -1,3 +1,26 @@
+.navbar {
+    margin-bottom: 0px;    
+}
+header h1 {
+    margin-top: 0px;
+}
+.navbar-brand {
+    padding-left: 65px;
+}
+.nav>li>a:focus, 
+.nav>li>a:hover {
+    background-color: transparent;
+}
+
+#logo {
+    width: 50px;
+    border: 2px solid gray;
+    border-radius: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 1;
+}
 
 header {
 	height: 400px;
@@ -81,7 +104,7 @@ header h1 {
 header h1 span {
 	display: inline-block;
 	padding: 1em;
-	border: rgba(255,255,255,0.7) solid 8px;
+	border: 8px solid rgba(255,255,255,0.7);
 
 }
 
