@@ -5,21 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width = device-width, initial-scale = 1">
 		<!-- <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,400italic' rel='stylesheet' type='text/css'> -->
-		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		
+		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
-
 		<link rel="stylesheet" type="text/css" href="styles.css">
-		
 
-
+		<link rel="shortcut icon" href="images/logo-title.jpg" type="image/png">  <!-- link for image in title -->
+		<title>OL Gallery</title>
 
 	</head>
 	<body>
 		<div>
 		<a href="#"><img id="logo" src="images/logo.png" alt="logo"></a>
 		</div>
-		<nav class="navbar navbar-custom">
+		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">Галерея</a>
@@ -250,7 +248,8 @@ document.onkeydown = function(evtEsc) {
 
 // Get all images and insert the clicked image inside the modal
 // Get the content of the image description and insert it inside the modal image caption
-var images = document.getElementsByTagName('img');
+//var images = document.getElementsByTagName('img');
+var images = document.getElementsByClassName('img-responsive');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 var i;
@@ -262,12 +261,6 @@ for (i = 0; i < images.length; i++) {
        captionText.innerHTML = this.nextElementSibling.innerHTML;
    }
 }
-
-/*function nextPic() {
-	alert(modalImg[i]);
-	modalImg.src = "images/3.jpg";
-    captionText.innerHTML = "Some text";
-};*/
 
 </script>
 

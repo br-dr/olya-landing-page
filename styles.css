@@ -1,15 +1,9 @@
 .navbar {
     margin-bottom: 0px;    
 }
-header h1 {
-    margin-top: 0px;
-}
+
 .navbar-brand {
     padding-left: 65px;
-}
-.nav>li>a:focus, 
-.nav>li>a:hover {
-    background-color: transparent;
 }
 
 #logo {
@@ -33,14 +27,9 @@ header {
     margin-bottom: 0px;
 }
 
-header h1 {
-    margin:0px;
+.navbar-header, .container-fluid  {
+    background-color: #F5DEB3;
 }
-
-/*header nav {
-	float: right;
-	margin: 25px 25px 0 0;
-}*/
 
 nav a {
 	display: inline-block;
@@ -53,46 +42,13 @@ nav a {
 
 }
 
-/*nav button {
-    color: black;
-    z-index: 1;
-}*/
-
-nav button {
-    position: relative;
+.carousel-indicators {
     z-index: 1;
 }
-
-.navbar-toggle {
-    background-color: pink;
-    
-}
-
-.navbar-custom {
-    background-color:#F5DEB3;
-    /*min-height: 30px !important;
-    height: 30px !important;*/
-    color: #ffffff;
-    border: none;
-    /*margin: 0 0 0 0 !important;*/
-    /*padding: 0px;*/
-          
-    
- }
- 
- .icon-bar {
-     color: black
- }
-
 
 nav a {
 	font-family: 'Lobster', Arial, serif; 
 
-}
-
-header nav a:hover {
-	color: rgba(255,255,255,0.7);
-	text-decoration: none;
 }
 
 header h1 {
@@ -102,11 +58,11 @@ header h1 {
 	color: rgba(255,255,255,1);
 	text-transform: uppercase;
 	clear: both;
+    margin-top: 0px;
 	padding-top: 100px;
 	/*font-family: 'Lobster Two',	Arial, serif;*/
 	font-family: 'Lobster', Arial, serif; 
 	letter-spacing: 8px;
-
 }
 
 header h1 span {
@@ -115,7 +71,6 @@ header h1 span {
 	border: 8px solid rgba(255,255,255,0.7);
 
 }
-
 
 #mySlider {
     margin-top: 40px;
@@ -175,11 +130,16 @@ footer a {
 	
 }
 
-footer nav a:hover {
-	color: rgba(255,255,255,0.7);
-	text-decoration: none;
-}
-
+/*Navbar & footer hover,focus*/
+.navbar-header a:hover,
+.navbar-right li a:hover,
+footer div nav a:hover,
+.navbar-header a:focus,
+.navbar-right li a:focus,
+footer div nav a:focus {
+    color: rgb(35,82,124) !important;
+    text-decoration: none;
+} 
 
 /* The Modal (background) */
 .modal {
@@ -194,6 +154,7 @@ footer nav a:hover {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    z-index: 1;
 }
 
 /* Modal Content (image) */
