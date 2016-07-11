@@ -19,6 +19,8 @@ header {
     margin: 0;
 }
 
+
+
 .navbar {
     margin-bottom: 0px;
 }
@@ -59,6 +61,14 @@ header h1 {
 	/*font-family: 'Lobster Two',	Arial, serif;*/
 	font-family: 'Lobster', Arial, serif; 
 	letter-spacing: 8px;
+}
+
+@media screen and (max-width: 480px) {
+ header h1 {
+     font-size: 28px;
+     margin: 0 20px;
+ }
+
 }
 
 header h1 span {
