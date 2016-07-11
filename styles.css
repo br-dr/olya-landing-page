@@ -1,16 +1,12 @@
-.navbar {
-    margin-bottom: 0px;    
-}
-
-.navbar-brand {
-    padding-left: 65px;
+.navbar-brand {    
+    margin-left: 50px !important;
 }
 
 #logo {
-    width: 50px;
+    width: 42px;
     border: 2px solid gray;
     border-radius: 100%;
-    margin: 0px;
+    margin: 4px;
     padding: 0px;
     position: fixed;
     z-index: 1;
