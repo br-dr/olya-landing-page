@@ -224,7 +224,11 @@
   <span class="close">X</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
-  <!-- <button type="button" onclick="nextPic()">Next Picture</button> -->
+  <!-- Div for picture tape -->
+  <div id="tape">
+  	
+  </div>
+
 </div>
 
 <script>
@@ -248,19 +252,35 @@ document.onkeydown = function(evtEsc) {
 
 // Get all images and insert the clicked image inside the modal
 // Get the content of the image description and insert it inside the modal image caption
-//var images = document.getElementsByTagName('img');
 var images = document.getElementsByClassName('img-responsive');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-var i;
-for (i = 0; i < images.length; i++) {
-   images[i].onclick = function(){
+
+var pictureTape = document.getElementById("tape");
+
+for (var i = 0; i < images.length; i++) {
+	var imgTape = document.createElement("IMG");
+	var imgCaption = document.createElement("P");
+	
+	imgTape.src = images[i].src;
+	imgTape.alt = images[i].alt;
+	pictureTape.appendChild(imgTape);
+	pictureTape.appendChild(imgCaption);
+	imgCaption.innerHTML = images[i].nextElementSibling.innerHTML;
+
+	imgTape.onclick = function() {		
+		modalImg.src = this.src;
+        modalImg.alt = this.alt;       
+        captionText.innerHTML = this.nextElementSibling.innerHTML;
+	};
+
+    images[i].onclick = function(){
        modal.style.display = "block";
        modalImg.src = this.src;
-       modalImg.alt = this.alt;
-       captionText.innerHTML = this.nextElementSibling.innerHTML;
-   }
-}
+       modalImg.alt = this.alt;       
+       captionText.innerHTML = this.nextElementSibling.innerHTML;       
+   }    	     
+};
 
 </script>
 
