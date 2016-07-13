@@ -231,9 +231,12 @@ footer div nav a:focus {
     border: 2px solid transparent;   
 }
 
-#tape img:hover {    
+#tape img:hover {
+    width: 90px;
+    margin: -7px;
     padding: 0px;
-    border: 2px solid #bbb;     
+    border: 2px solid #bbb;
+    position: relative;    
 }
 
 .img-responsive:hover,
