@@ -288,3 +288,12 @@ footer div nav a:focus {
 #tape p {
     display: none;
 }
+
+#contact {
+    background-color: #FDF5E6;
+    font-family: 'Lobster', Arial, serif; 
+}
+
+#contact p {
+    font-size: 16px;    
+}
