@@ -221,12 +221,29 @@ footer div nav a:focus {
 
 #tape {    
     text-align: center;    
+    height: 100px;  
 }
 
 #tape img {
-    height: 50px;
-    margin: 3px;    
+    width: 80px;
+    padding: 5px;   
+    margin: -2px; 
+    border: 2px solid transparent;   
 }
+
+#tape img:hover {
+    width: 90px;
+    margin: -7px;
+    padding: 0px;
+    border: 2px solid #bbb;
+    position: relative;    
+}
+
+.img-responsive:hover,
+#tape img:hover {
+    cursor: pointer;
+}
+
 #tape p {
     display: none;
 }
