@@ -268,19 +268,10 @@ footer div nav a:focus {
 
 #tape img {
     width: 80px;
-    /*max-width: 80px;
-    max-height:
-    padding: 5px;   
-    margin: -2px; */
     border: 2px solid transparent;            
 }
 
-#tape img:hover {
-    /*width: 90px;
-    max-width: 90px;
-    max-height: 90px;
-    margin: -2px;
-    padding: 0px;*/
+#tape img:hover {    
     border: 2px solid #bbb;
     position: relative;
     -ms-transform: scale(1.2,1.2); /* IE 9 */
