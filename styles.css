@@ -201,8 +201,9 @@ footer div nav a:focus {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    max-height: 500px;
+    /*width: 80%;
+    max-width: 700px;*/
 }
 
 /* Caption of Modal Image */
@@ -214,7 +215,7 @@ footer div nav a:focus {
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
+    height: 75px;
 }
 
 /* Add Animation */
@@ -262,22 +263,20 @@ footer div nav a:focus {
 
 #tape {    
     text-align: center;    
-    height: 100px;  
+    height: 150px;    
 }
 
 #tape img {
     width: 80px;
-    padding: 5px;   
-    margin: -2px; 
-    border: 2px solid transparent;   
+    border: 2px solid transparent;            
 }
 
-#tape img:hover {
-    width: 90px;
-    margin: -7px;
-    padding: 0px;
+#tape img:hover {    
     border: 2px solid #bbb;
-    position: relative;    
+    position: relative;
+    -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2); /* Standard syntax */    
 }
 
 .img-responsive:hover,
@@ -296,4 +295,22 @@ footer div nav a:focus {
 
 #contact p {
     font-size: 16px;    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ .img-responsive {
+     max-height: 250px;     
+ }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+ .img-responsive {
+     max-height: 150px;     
+ }
+}
+
+@media only screen and (min-width: 1200px) {
+ .img-responsive {
+     max-height: 190px;    
+ }
 }
