@@ -21,6 +21,7 @@ header {
 
 .navbar {
     margin-bottom: 0px;
+    border: 0px;
 }
 
 .navbar-header, .container-fluid  {
@@ -37,7 +38,8 @@ nav a {
 	font-weight: 700;
 }
 
-.carousel-indicators {
+.carousel-indicators,
+.carousel-caption {
     z-index: 1;
 }
 
